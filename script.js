@@ -25,6 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return num.toString();
   }
 
+
+
+  // Função para Incrementar a Curtida
+function addLike() {
+baseLikes++;
+isLiked = true;
+likeBtn.classList.add("liked");
+
+if (likesCountSpan) {
+likesCountSpan.textContent = formatLikes(baseLikes);
+}
+
   // Define o valor inicial formatado
   likesCountSpan.textContent = formatLikes(baseLikes);
 
